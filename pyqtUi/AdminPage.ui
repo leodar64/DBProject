@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Page</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="tabAddEmployee">
+    <attribute name="title">
+     <string>Añadir / Modificar Empleado</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Apellido:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Posicion Empleado:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Direccion Postal:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID de Empleado:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EmpNameLine">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EmpLastNameLine">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="positionEmp">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EmpAddressLine">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EmpId">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addEmployeeButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>170</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Añadir Empleado</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refreshButton_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>200</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="modifyEmp_button">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>530</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modificar</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="EmpList">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>411</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="EmpLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>360</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>360</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID de Empleado Seleccionado:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Apellido:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="positionEmp_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>470</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>470</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Posicion Empleado:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EmpNameLine_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>380</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="clientLastNameLine_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>410</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>440</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Direccion:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="direccionEmp">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>440</y>
+       <width>351</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabAddBuilding">
+    <attribute name="title">
+     <string>Añadir / Modificar Edificio</string>
+    </attribute>
+    <widget class="QLabel" name="BuildingMemLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nivel de Membresía:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="buildingToAddMem">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="buildingToAdd">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addBuildingButton">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>30</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Añadir</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="buildingList">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>411</width>
+       <height>331</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BuildingNameLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre Edificio:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="buildingModify">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>470</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="modifyBuilding">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>490</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modificar Edificio</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BuildingNameLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>460</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre Edificio:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="buildingToAddMem_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>510</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BuildingMemLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>510</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nivel de Membresía:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>440</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre Edificio Seleccionado:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="buildSelecLabel">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>440</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refreshButton">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>80</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabAddArticles">
+    <attribute name="title">
+     <string>Añadir / Modificar Articulos</string>
+    </attribute>
+    <widget class="QLabel" name="IdNumberLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numero ID:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="itemToAddId">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addItemButton">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>70</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Añadir</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="itemList">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>411</width>
+       <height>241</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="itemToAddName">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>70</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ProdNameLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre Producto:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="itemToAddPrice">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="prodPriceLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Precio:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>420</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numero ID de Producto Seleccionado:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="itemModify_1">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>490</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ModItemButton">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>490</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modificar Producto</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="itemModify">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>450</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="prodPriceLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>520</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Precio:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ProdNameLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>480</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre Producto:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="itemModify_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>530</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="IdNumberLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>440</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numero ID:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="prodSelecLabel">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>420</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refreshButton_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>160</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabAdminModify">
+    <attribute name="title">
+     <string>Borrar</string>
+    </attribute>
+    <widget class="QListWidget" name="EmployeeListDel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>481</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="BuildingListDel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>481</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="ProductListDel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>410</y>
+       <width>481</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 10pt; font: bold;</string>
+     </property>
+     <property name="text">
+      <string>Product List:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 10pt; font: bold;</string>
+     </property>
+     <property name="text">
+      <string>Buiding List:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 10pt; font: bold;</string>
+     </property>
+     <property name="text">
+      <string>Person List:</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="returnMain">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
